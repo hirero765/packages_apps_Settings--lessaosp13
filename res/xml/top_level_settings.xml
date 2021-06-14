@@ -70,6 +70,15 @@
         settings:controller="com.android.settings.fuelgauge.TopLevelBatteryPreferenceController"/>
 
     <com.android.settings.widget.HomepagePreference
+        android:fragment="com.lessaosp.settings.LessaospSettings"
+        android:icon="@drawable/ic_settings_lessaosp"
+        android:key="top_level_lessaosp"
+        android:order="-160"
+        android:title="@string/lessaosp_dashboard_title"
+        android:summary="@string/lessaosp_dashboard_summary"
+        settings:controller="com.lessaosp.settings.TopLevelLessaospSettingsPreferenceController"/>
+
+    <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.deviceinfo.StorageDashboardFragment"
         android:icon="@drawable/ic_storage_white"
         android:key="top_level_storage"

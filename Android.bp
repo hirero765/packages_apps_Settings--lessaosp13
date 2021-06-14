@@ -47,7 +47,8 @@ android_library {
     srcs: ["src/**/*.java", "src/**/*.kt"],
     resource_dirs: [
         "res",
-        "TouchGestures/res"
+        "TouchGestures/res",
+        "Mantle/res"
     ],
 
     static_libs: [
@@ -92,6 +93,10 @@ android_library {
         "ims-common",
         "app-compat-annotations",
     ],
+
+    optimize: {
+        proguard_flags_files: ["proguard-core.flags"],
+    },
 }
 
 platform_compat_config {
